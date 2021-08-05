@@ -126,8 +126,8 @@ Add the `index.html` in the public folder
 #### Create a basic `index.js` file
 
 ```
-import React from react
-import ReactDom from react-dom
+import React from "react"
+import ReactDom from "react-dom"
 const root = document.getElementById('root')
 const App = () => {
 return (
@@ -147,6 +147,8 @@ The following scripts allows to run the following commands:
 - `npm build`
 
 ```
-“start”: “webpack-dev-server — mode development — open — hot”,
-“build”: “webpack — mode production”
+"scripts: {
+"start": "webpack serve  --mode=development --open --hot",
+"build": "webpack --mode=production"
+}
 ```
