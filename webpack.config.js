@@ -10,8 +10,8 @@ module.exports = {
   },
   // webpack 5 comes with devServer which loads in development mode
   devServer: {
+    static: "./build",
     port: 3000,
-    watchContentBase: true,
   },
   resolve: {
     modules: [path.join(__dirname, "src"), "node_modules"],
