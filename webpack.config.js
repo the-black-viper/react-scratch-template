@@ -7,6 +7,11 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
   },
+  // webpack 5 comes with devServer which loads in development mode
+  devServer: {
+    port: 3000,
+    watchContentBase: true,
+  },
   resolve: {
     modules: [path.join(__dirname, "src"), "node_modules"],
     alias: {
